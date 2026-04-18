@@ -3,7 +3,7 @@
 %global devname %mklibname -d %{name}
 
 Name:		canfigger
-Version:	0.3.0
+Version:	0.3.1
 Release:	1
 Source0:	https://github.com/andy5995/canfigger/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Summary:	A lightweight library designed to parse configuration files
@@ -43,5 +43,6 @@ Requires:	%{libname} = %{version}
 
 %files -n %{devname}
 %{_includedir}/%{name}.h
+%{_includedir}/%{name}_version.h
 %{_libdir}/lib%{name}.so
 %{_libdir}/pkgconfig/%{name}.pc
